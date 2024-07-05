@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Desativar o Windows Defender
+[HKEY_LOCAL_MACHINESOFTWAREPoliciesMicrosoftWindows Defender]
+DisableAntiSpyware=dword00000001
+
+; Desativar o serviço do Windows Defender
+[HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesWinDefend]
+Start=dword00000004
+
+; Desativar a atualização do Windows Defender
+[HKEY_LOCAL_MACHINESOFTWAREPoliciesMicrosoftWindows DefenderSignature Updates]
+AutoUpdateSignatures=dword00000000
